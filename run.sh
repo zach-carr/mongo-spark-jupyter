@@ -70,6 +70,6 @@ echo '\n\nTearing down the Docker environment, please wait.\n\n'
 
 # if we don't specify -v then issue this one -> docker-compose exec mongo1 /usr/bin/mongo localhost:27017/SparkDemo --eval "db.dropDatabase()"
 
-dockder-compose down  -v
+docker-compose down  -v
 
 # note: we use a -v to remove the volumes, else you'll end up with old data
